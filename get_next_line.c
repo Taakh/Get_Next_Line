@@ -6,7 +6,7 @@
 /*   By: rmangili <rmangili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/22 14:39:29 by rmangili          #+#    #+#             */
-/*   Updated: 2014/12/09 15:22:40 by rmangili         ###   ########.fr       */
+/*   Updated: 2015/01/02 00:28:14 by rmangili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 static int		get_read_size(char **str, int fd)
 {
 	int		i;
-	char	buf[BUF_SIZE];
+	char	buf[BUF_SIZE + 1];
 	char	*s;
 
 	i = read (fd, buf, BUF_SIZE);
