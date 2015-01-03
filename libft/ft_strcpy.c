@@ -1,19 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmangili <rmangili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/22 15:17:39 by rmangili          #+#    #+#             */
-/*   Updated: 2014/12/24 03:40:51 by rmangili         ###   ########.fr       */
+/*   Created: 2014/11/04 09:10:58 by rmangili          #+#    #+#             */
+/*   Updated: 2014/11/20 04:38:13 by rmangili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
-# define BUF_SIZE 10000
+#include <string.h>
 
-int				get_next_line(int const fd, char **line);
+char	*ft_strcpy(char *dst, const char *src)
+{
+	int		i;
 
-#endif
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	dst[i] = '\0';
+	return (dst);
+}

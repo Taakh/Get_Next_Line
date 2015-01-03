@@ -1,19 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rmangili <rmangili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/22 15:17:39 by rmangili          #+#    #+#             */
-/*   Updated: 2014/12/24 03:40:51 by rmangili         ###   ########.fr       */
+/*   Created: 2014/11/06 16:33:06 by rmangili          #+#    #+#             */
+/*   Updated: 2014/11/21 04:51:01 by rmangili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
-# define BUF_SIZE 10000
+#include <string.h>
 
-int				get_next_line(int const fd, char **line);
+size_t	ft_strlen(char *str)
+{
+	size_t	i;
 
-#endif
+	i = 0;
+	while (str[i])
+	{
+		i++;
+	}
+	return (i);
+}
