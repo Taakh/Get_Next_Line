@@ -6,7 +6,7 @@
 /*   By: rmangili <rmangili@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/22 14:39:29 by rmangili          #+#    #+#             */
-/*   Updated: 2015/01/04 00:26:54 by rmangili         ###   ########.fr       */
+/*   Updated: 2015/01/04 00:38:37 by rmangili         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ static int		get_fill_line(char **str, char **line, char *s)
 	free(zebre);
 	return (i);
 }
+
 int				get_next_line(int const fd, char **line)
 {
 	char		*s;
